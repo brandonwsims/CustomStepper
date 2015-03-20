@@ -39,6 +39,50 @@
 
   The circuits can be found at 
   http://www.arduino.cc/en/Tutorial/Stepper
+  
+  #########################################
+  H-Bridge Movements
+  
+  HL  HR  LL  LR
+  1   0   0   1   Moves Clockwise
+  0   1   1   0   Move Counterclockwise
+  1   1   0   0   Brakes
+  0   0   1   1   Brakes
+  
+  Other permutations have undefined or unwanted results.
+  
+  Clockwise
+  
+  |     |
+  |     /
+  |-(M)-|
+  /     |
+  |     |
+  
+  Counterclockwise
+  
+  |     |
+  /     |
+  |-(M)-|
+  |     /
+  |     |
+  
+  Brakes
+  
+  |     |
+  |     |
+  |-(M)-|
+  /     /
+  |     |
+  
+  Clockwise
+  
+  |     |
+  /     /
+  |-(M)-|
+  |     |
+  |     |
+  
 */
 
 // ensure this library description is only included once
